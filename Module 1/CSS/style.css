@@ -1,0 +1,34 @@
+/* IDs are highest priority, then classes, then elements */
+*{
+    font-family:'Calibri Light';
+}
+h1 {
+    color: blue;
+    font-size: 30px;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #fff565;
+    border: dotted;
+    border-width: 15px;
+    border-top-color: #F098f0;
+    border-left-color:#0f77;
+    border-bottom-color:#F098f0;
+    border-right-color:#0f77;
+    padding: 20px;
+    margin-left: 15px;
+}
+#id_name {
+    color: purple;
+}
+[name=box1] {
+    color: teal;
+}
+.class_name {
+    color: darkcyan;
+    font-size:50px;
+}
+.class2 {
+    text-align: center;
+}
