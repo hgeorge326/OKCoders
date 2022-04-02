@@ -32,3 +32,7 @@ h1 {
 .class2 {
     text-align: center;
 }
+.container {
+    height: 60px;
+    width: 100%;
+}

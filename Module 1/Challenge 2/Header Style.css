@@ -1,0 +1,114 @@
+* {
+    font-family: 'Calibri Light';
+}
+.header-img {
+    background-image: url("../macbook.jpg");
+    height: 75vh;
+    background-size: cover;
+    box-align: center;
+    position: relative;
+}
+.header-txt {
+    background-color: white;
+    width: 40%;
+    padding: 20px 40px;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    transform: translateY(-50%);
+    box-shadow: 10px 10px 25px;
+}
+.button{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    box-shadow: 8px 10px 25px black;
+}
+.button2 {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    box-shadow: 8px 10px 25px black;
+    margin-left: 50px;
+}
+.mb{
+    margin-bottom: 30px;
+}
+.button:hover {
+    background-color: teal;
+}
+.button2:hover {
+    background-color: rgb(0, 66, 128);
+}
+.container {
+    height: 60px;
+    width: 100%;
+}
+.green {
+    background-color: rgb(0, 128, 79);
+}
+.red {
+    background-color: rgb(255, 0, 200);
+}
+/* Make Headers Responsive */
+/* Apply styles only to 400 px or LESS */
+@media (max-width: 800px) {
+    .header-txt {
+        width: 75vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 12px;
+    }
+    button {
+        font-size: 10px;
+        transform: scale(0.75);
+    }
+    
+}
+@media (max-width: 1200px) {
+    .green {
+        background-color: rgb(43, 32, 134);
+    }
+}
+@media (max-width: 800px) {
+    .green {
+        background-color: rgb(239, 247, 131);
+    }
+}
+@media (max-width: 600px) {
+    .green {
+        background-color: rgb(162, 0, 255);
+    } */
+}
+@media (min-width: 600px) {
+    .red {
+        background-color: pink;
+    }
+}
+@media (min-width: 800px) {
+    .red {
+        background-color: darkmagenta;
+    }
+}
+@media (min-width: 1200px) {
+    .red {
+        background-color: darkturquoise;
+    }
+}
