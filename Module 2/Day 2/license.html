@@ -7,17 +7,21 @@
         <h1>Renew Your License!</h1>
     </body>
         <script>
-        const doThing = () => {
-        const name = window.prompt ("What is your name?");
-        const age = window.prompt ("What is your current age?");
-        const address = window.prompt ("What is your current address");
-        console.log("=======================");
-        console.log(`| Name: ${name}        |`);
-        console.log(`| Age: ${age}              |`);
-        console.log(`| Address: ${address}  |`);
-        console.log("=======================");
-        }
-        window.onload = doThing;
-    </script>
+            window.onload = function () {
+            const name = window.prompt ("What is your name?");
+            const age = window.prompt ("What is your current age?");
+            const address = window.prompt ("What street do you live on?");
+            const eyeColor = window.prompt ("What color are you eyes?");
+            const hairColor = window.prompt ("What color is your hair?");
+            console.log("=".padEnd(34,"="));
+            console.log("| Name: " +name.padEnd(25," ") +"|");
+            console.log("| Age: " +age.padEnd(26," ") +"|");
+            console.log("| Address: " +address.padEnd(22," ") +"|");
+            console.log("| Eye Color: " +eyeColor.padEnd(20," ") +"|");
+            console.log("| Hair Color: " +hairColor.padEnd(19," ") +"|");
+            console.log("|" + "¯\\_(ツ)_/¯".padStart(31)+"|");
+            console.log("=".padEnd(34,"="));
+            }
+        </script>
 
 </html>

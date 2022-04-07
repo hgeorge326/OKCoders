@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button id="play-button">Play MadLib</button>
+        <script>
+            const test = "OK Coders";
+            const successMessage = "Hey, the response from the boss was \"you are doing such a good job\""
+            const successMessage2 = `Hey, the response from \${}the boss was \"you are doing such a good job\"`
+            console.log(successMessage);
+            console.log(successMessage2);
+
+            const testString = "OK Coders";
+            const lengthOfString = test.length;
+            console.log(lengthOfString);
+            console.log(testString[6]);
+
+            const chatMessage = "I'm a kid, I have a potty mouth, poop";
+            const cleanedMessage = chatMessage.replaceAll("poop", "shit");
+            const advancedExample = chatMessage.replaceAll(/poop|potty/g, '')
+            console.log(chatMessage)
+            console.log(cleanedMessage);
+            console.log(advancedExample);
+
+            //Code for MadLib Below//
+            const playButton = document.getElementById("play-button");
+            playButton.addEventListener('click', function () {
+                console.log("Play MadLib!");
+                console.log("Here is your Sentence...");
+                console.log("OK Coders is the ______ class I've ever taken. It is SOOO ____!");
+                const firstWord = prompt("First Word?");
+                const secondWord = prompt("Second Word?");
+                console.log(`OKCOders is the ${firstWord} class I've ever taken. It is SOOO ${secondWord}!`);
+            })
+        </script>
+    </body>
+</html>

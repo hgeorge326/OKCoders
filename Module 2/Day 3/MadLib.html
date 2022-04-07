@@ -1,0 +1,82 @@
+<html>
+    <head>
+         <style>
+        body{
+            background-image: url(DoXa5j0XsAEr_Ui.webp);
+            height: 100vh;
+            background-size: cover;
+        }
+        .container {
+            height: 200px;
+            position: relative;
+        }
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .result {
+            color: rgb(253, 252, 252);
+            font-family: "Calibri Light";
+            font-size: 2vmin;
+            width: 50vw;
+            height: 50vw;
+            position: absolute;
+            transform: translate(50%, 0%);
+        }
+        button {
+            background-color: black;
+            font-size: 30px;
+            color: red;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            box-shadow: 10px 10px 10px rgb(14, 185, 51);
+            padding: 30px;
+            border-radius: 35px;
+        }
+    </style>
+        <title>GAME TIME</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class ="center">
+                <button id="play">Let's Play A Game</button>
+            </div>
+        </div>
+        <div id="results" class="result"></div>
+        <script>
+            const playButton = document.getElementById("play");
+            playButton.addEventListener('click', function () {
+                const firstVerb = prompt("Verb ending in -ing");
+                const typeOfLiquid = prompt ("Type of liquid");
+                const typeOfFood = prompt ("Type of food");
+                const firstAdjective = prompt ("Adjective");
+                const firstNoun = prompt ("Noun");
+                const firstNounUpper = firstNoun.charAt(0).toUpperCase() + firstNoun.slice(1);
+                const secondAdjective = prompt ("Adjective");
+                const secondNoun = prompt ("Noun");
+                const thirdAdjective = prompt ("Adjective");
+                const secondVerb = prompt ("Verb");
+                const adverb = prompt ("Adverb");
+                const pluralNoun = prompt ("Plural noun")
+                const secondPluralNoun = prompt("Another plural noun");
+                const bodyPart = prompt ("Part of the body");
+                const thirdPluralNoun = prompt ("Plural Noun");
+                const fourthAdjective = prompt ("Adjective");
+                const malePerson = prompt ("Name of a male person you know");
+                const exclamation = prompt ("Exclamation");
+                const exclamationUpper = exclamation.charAt(0).toUpperCase() + exclamation.slice(1);
+                const place = prompt ("A place");
+                var div = document.getElementById("results");
+                div.innerHTML += `After ${firstVerb} shotguns at the range, drinking ${typeOfLiquid} by the pool, and a big ${typeOfFood} dinner, this is turning out to be a/an ${firstAdjective} night.
+                 I'm at some bar called the ${firstNounUpper} Lounge, and I am ${secondAdjective} smashed right now. We have ${secondNoun} service in a/an ${thirdAdjective} VIP area, but there are no 
+                 girls here. Well, I'm the groom, so I think I'll go ${secondVerb} some up. I can't ${adverb} see anything with all the flashing ${pluralNoun} in this club, but I think there's 
+                 a group of ${secondPluralNoun} in that corner. Hmmmm... there's a brunette over there... I can't see her face, but boy does she have a great ${bodyPart}. I'll ask her if she and her friends want to join 
+                 us for a round of ${thirdPluralNoun}. "Excuse me, but we have ${fourthAdjective} booze and no one to share it with. Want to join us? " She turns around and smiles at me. "Yes, ${malePerson}, we'd love to join you," she says. 
+                 ${exclamationUpper}! I must be the only groom in (the) ${place} to hit on his own fianc\xE9e during his bachelor party.`
+            })
+        </script>
+    </body>
+</html>
