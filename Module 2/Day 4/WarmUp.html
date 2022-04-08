@@ -1,0 +1,39 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button id="click" onclick="go()"></button>
+        <script>
+            const clickMe = document.getElementById("click");
+            clickMe.innerHTML = "Click Me";
+            var testCount = 0;
+            function go() {
+                testCount++;
+                switch(testCount) {
+                    case 1:
+                        clickMe.innerHTML = "Do It Again Please";
+                        break;
+                    case 2:
+                        clickMe.innerHTML = "One More Time";
+                        break;
+                    case 3:
+                        clickMe.innerHTML = "Okay Maybe One More";
+                        break;
+                    case 4:
+                        clickMe.innerHTML = "Me Likey";
+                        break;
+                    default:
+                        clickMe.innerHTML = "Okay No More";
+                        break;
+                }
+            }
+            document.getElementById("click").style.background = "#018f88";
+            document.getElementById("click").style.color = "#efbff5";
+            document.getElementById("click").style.fontFamily = "Calibri Light";
+            document.getElementById("click").style.padding = "15px";
+            document.getElementById("click").style.fontSize = "30px";
+
+        </script>
+    </body>
+</html>
