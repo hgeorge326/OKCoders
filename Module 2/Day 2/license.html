@@ -13,14 +13,31 @@
             const address = window.prompt ("What street do you live on?");
             const eyeColor = window.prompt ("What color are you eyes?");
             const hairColor = window.prompt ("What color is your hair?");
+            
+            function makeLicenseLine(header,headerValue,lineWidth) {
+                const headerWidth = header.length
+                const headerValueWidth = headerValue.length
+                const spacesLeft = lineWidth - headerWidth - headerValueWidth - 5;
+                return `| ${header}: ${headerValue}${" ".repeat(spacesLeft)} |`
+            }
+            
             console.log("=".padEnd(34,"="));
-            console.log("| Name: " +name.padEnd(25," ") +"|");
-            console.log("| Age: " +age.padEnd(26," ") +"|");
-            console.log("| Address: " +address.padEnd(22," ") +"|");
-            console.log("| Eye Color: " +eyeColor.padEnd(20," ") +"|");
-            console.log("| Hair Color: " +hairColor.padEnd(19," ") +"|");
+            console.log(makeLicenseLine("name",name,33));
+            console.log(makeLicenseLine("age",age,33));
+            console.log(makeLicenseLine("address",address,33));
+            console.log(makeLicenseLine("eye color",eyeColor,33));
+            console.log(makeLicenseLine("hair color",hairColor,33));
             console.log("|" + "¯\\_(ツ)_/¯".padStart(31)+"|");
             console.log("=".padEnd(34,"="));
+
+            // console.log("=".padEnd(34,"="));
+            // console.log("| Name: " +name.padEnd(25," ") +"|");
+            // console.log("| Age: " +age.padEnd(26," ") +"|");
+            // console.log("| Address: " +address.padEnd(22," ") +"|");
+            // console.log("| Eye Color: " +eyeColor.padEnd(20," ") +"|");
+            // console.log("| Hair Color: " +hairColor.padEnd(19," ") +"|");
+            // console.log("|" + "¯\\_(ツ)_/¯".padStart(31)+"|");
+            // console.log("=".padEnd(34,"="));
             }
         </script>
 
