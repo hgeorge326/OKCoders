@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Warm-up</title>
+</head>
+
+<body>
+
+    <label>Name: </label>
+    <input id="name" type="text">
+    <button id="submit">submit</button>
+    <div class="input"></div>
+
+    <script>
+        const inputEL = document.querySelector(".input")
+        const nameInput = document.getElementById("name")
+        const submitButton = document.getElementById("submit")        
+        submitButton.addEventListener("click", onSubmit)
+        function supFunction (name) {
+            return `Hey ${name}! What it do?`
+        }
+        supFunction();
+        function onSubmit() {
+            console.log(nameInput.value)
+            console.log("submitted")
+            console.log(supFunction(nameInput.value))
+            inputEL.innerHTML += `${supFunction(nameInput.value)}`
+        }
+    </script>
+</body>
+
+</html>

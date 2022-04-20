@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <body>
+            <script>
+                const firstBoolean = true;
+                const secondBoolean = false;
+                console.log(firstBoolean);
+                console.log(secondBoolean);
+                console.log(!firstBoolean);
+                console.log(firstBoolean === secondBoolean);
+                console.log(firstBoolean === !secondBoolean);
+
+                console.log("Heather" === "George");
+                console.log(1 > 2);
+                console.log(1 >= 1);
+                console.log("Zach" != "Zach");
+                const shoppingCart = [];
+
+                function updatePageIfCartEmpty() {
+                    const isEmpty = shoppingCart.length === 0;
+                    if(isEmpty) {
+                        console.log("Bitch, put something in your cart.");
+                    } else if (shoppingCart.length >= 5) {
+                        console.log(`Hot damn Bitch! You are buying so much you get a discount!`);                      
+                    } else if (shoppingCart.length === 4 || shoppingCart.length ===3) {
+                        console.log(`Hey you fat Bitch, add one more thing and you get a discount`);
+                    } else {
+                        console.log(`Good job Bitch! Enjoy your ${shoppingCart[0]} and ${shoppingCart[1]}!`);
+                    } 
+                }
+                shoppingCart.push("cow milk", "chocolate",);
+                updatePageIfCartEmpty();
+            </script>
+        </body>
+    </head>
+</html>
