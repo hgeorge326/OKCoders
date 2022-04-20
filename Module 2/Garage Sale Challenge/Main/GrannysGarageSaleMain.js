@@ -1,4 +1,4 @@
-//***ADDED IF STATEMENTS TO ALLOW FOR MULTIPLE HTML */
+//ADDED IF STATEMENTS TO ALLOW FOR MULTIPLE HTML
 //elements
 const productsEl = document.querySelector('.itemForSale');
 const cartItemsEl = document.querySelector('.cart-items');
@@ -116,6 +116,7 @@ function disableButton0 () {
 }
 disableButton0();
 if(productAdded0) productAdded0.addEventListener('click', disableButton0);
+
 const productAdded1 = document.getElementById("added1");
 function disableButton1 () {
   if(cart.some((item) => item.id === 1)) {
@@ -125,6 +126,7 @@ function disableButton1 () {
 }
 disableButton1();
 if(productAdded1) productAdded1.addEventListener('click', disableButton1);
+
 const productAdded2 = document.getElementById("added2");
 function disableButton2 () {
   if(cart.some((item) => item.id === 2)) {
@@ -134,6 +136,7 @@ function disableButton2 () {
 }
 disableButton2();
 if(productAdded2) productAdded2.addEventListener('click', disableButton2);
+
 const productAdded3 = document.getElementById("added3");
 function disableButton3 () {
   if(cart.some((item) => item.id === 3)) {
@@ -143,6 +146,7 @@ function disableButton3 () {
 }
 disableButton3();
 if(productAdded3) productAdded3.addEventListener('click', disableButton3);
+
 const productAdded4 = document.getElementById("added4");
 function disableButton4 () {
   if(cart.some((item) => item.id === 4)) {
@@ -152,6 +156,7 @@ function disableButton4 () {
 }
 disableButton4();
 if(productAdded4) productAdded4.addEventListener('click', disableButton4);
+
 const productAdded5 = document.getElementById("added5");
 function disableButton5 () {
   if(cart.some((item) => item.id === 5)) {
@@ -161,6 +166,7 @@ function disableButton5 () {
 }
 disableButton5();
 if(productAdded5) productAdded5.addEventListener('click', disableButton5);
+
 const checkoutBtn = document.getElementById("checkout");
 function disableCheckoutBtn () {
   if(cart.length===0) {
