@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <body>
+            <script>
+                const aboutMe = {
+                    name: "Heather",
+                    addresses: ["11616 SW 5th St", "6113 N Allison Dr"],
+                    petNames: ["Ernie", "Bertie"],
+                    relationshipStatus: "single",
+                    birthday: "1987-03-26",
+                    salaries: [200, 300, 400, 500, 10000000]
+                }
+                //looping
+                for (let i = 0; i < 10; i++) {
+                    console.log("Hello");  
+                };
+                for(let i = 0; i < aboutMe.petNames.length; i++) {
+                    console.log(aboutMe.petNames[i]);
+                }
+                var total = 0;
+                for(let i = 0; i < aboutMe.salaries.length; i++) {
+                   total += aboutMe.salaries[i];
+                }
+                console.log(total);
+            </script>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,23 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6c/Shack_in_Pigeon_Forge%2C_TN_by_Zachary_Davies.jpg);
+    color: white;
+}
+
+img {
+    width: 250px;
+}
+.item-card {
+    border: 1px solid rgb(252, 252, 252);
+    padding: 10px;
+    background-color: rgb(17, 44, 28);
+    width: 300px;
+    margin-bottom: 10px;
+    color: white;
+}
+button {
+    border-radius: 50px;
+    background-color: aquamarine;
+    padding: 5px;
+}
