@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script data-main="Module 3/Halfway Challenge/Browser Challenge/" src="require.js"></script>
+        <title>
+            "Weather When You Want It"
+        </title>
+    </head>
+    <body>
+        <form action="" method="get" name=zipCode class="zip-code">
+            <div class="zip-code">
+                <label for="zipCode">Zip Code: </label>
+                <input type="text" class="zipCodeInput" id="zipCode" required>
+            </div>
+            <div class="zip-code">
+                <input type="submit" value="Get Your Weather!" name="zipCodeSubmit" onclick="weatherMagic(this.form)">
+            </div>
+            <div class="weatherMagicResults">
+
+            </div>
+        </form>
+        <script src='./index.js'></script>
+    </body>
+</html>

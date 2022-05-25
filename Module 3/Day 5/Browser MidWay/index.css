@@ -1,0 +1,17 @@
+label{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: palevioletred;
+    font-size: 20px;
+}
+input{
+    width: 50%
+}
+.button {
+    background: url(./Images/Cat\ Button.png) no-repeat;
+    background-size: contain;
+    border: none;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    align-items: center;
+}
