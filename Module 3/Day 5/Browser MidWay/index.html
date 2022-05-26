@@ -16,13 +16,19 @@
                     <input id="locationData" name="locationData" value="" required>
                 </div>
                 <div class="locationSubmit col-6">
-                    <button id="getWeatherData" class="button" type="button" onclick="getZip()"></button>
+                    <button id="getWeatherData" class="button" type="button"></button>
                 </div>
                 </div>
             </div>
         </form>
-        <!-- <button id="getWeatherData">Get Your Weather Meow</button> -->
-        <pre id="dataResults"></pre>
+        <div class="container-fluid d-flex justify-content-center">
+            <div>
+                <pre id="locationResults"></pre>
+            </div>
+            <div class = "row align-items-center">
+            <pre id="dataResults"></pre>
+            </div>
+        </div>
         <script src ='./index.js'></script>
     </body>
 </html>
